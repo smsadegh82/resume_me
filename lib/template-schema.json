@@ -1,0 +1,262 @@
+{
+  "templateSchema": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "preview_image": "string",
+    "category": "string",
+    "settings": {
+      "layout": {
+        "type": "grid | list | masonry",
+        "columns": "number",
+        "spacing": "tight | normal | loose",
+        "containerWidth": "full | contained | narrow"
+      },
+      "colors": {
+        "primary": "string",
+        "secondary": "string",
+        "accent": "string",
+        "background": "string",
+        "surface": "string",
+        "text": {
+          "primary": "string",
+          "secondary": "string",
+          "muted": "string"
+        },
+        "border": "string",
+        "success": "string",
+        "warning": "string",
+        "error": "string"
+      },
+      "typography": {
+        "fontFamily": "string",
+        "fontSize": {
+          "xs": "string",
+          "sm": "string",
+          "base": "string",
+          "lg": "string",
+          "xl": "string",
+          "2xl": "string",
+          "3xl": "string",
+          "4xl": "string"
+        },
+        "fontWeight": {
+          "normal": "number",
+          "medium": "number",
+          "semibold": "number",
+          "bold": "number"
+        },
+        "lineHeight": {
+          "tight": "number",
+          "normal": "number",
+          "relaxed": "number"
+        }
+      },
+      "spacing": {
+        "xs": "string",
+        "sm": "string",
+        "md": "string",
+        "lg": "string",
+        "xl": "string",
+        "2xl": "string"
+      },
+      "borderRadius": {
+        "none": "string",
+        "sm": "string",
+        "md": "string",
+        "lg": "string",
+        "xl": "string",
+        "full": "string"
+      },
+      "shadows": {
+        "sm": "string",
+        "md": "string",
+        "lg": "string",
+        "xl": "string"
+      },
+      "header": {
+        "style": "minimal | classic | modern | sticky",
+        "showLogo": "boolean",
+        "showSearch": "boolean",
+        "showCart": "boolean",
+        "showCategories": "boolean",
+        "backgroundColor": "string",
+        "textColor": "string",
+        "height": "string"
+      },
+      "navigation": {
+        "position": "top | side | bottom",
+        "style": "tabs | pills | underline | sidebar",
+        "showIcons": "boolean",
+        "collapsible": "boolean"
+      },
+      "productCard": {
+        "style": "minimal | detailed | compact | overlay",
+        "showRating": "boolean",
+        "showBadges": "boolean",
+        "showQuickView": "boolean",
+        "showAddToCart": "boolean",
+        "imageAspectRatio": "square | portrait | landscape",
+        "hoverEffect": "none | lift | zoom | fade"
+      },
+      "footer": {
+        "style": "minimal | detailed | centered",
+        "showSocialLinks": "boolean",
+        "showContactInfo": "boolean",
+        "showNewsletter": "boolean",
+        "backgroundColor": "string",
+        "textColor": "string"
+      },
+      "animations": {
+        "enabled": "boolean",
+        "duration": "fast | normal | slow",
+        "easing": "ease | ease-in | ease-out | ease-in-out"
+      },
+      "responsive": {
+        "breakpoints": {
+          "sm": "string",
+          "md": "string",
+          "lg": "string",
+          "xl": "string"
+        },
+        "mobileFirst": "boolean"
+      }
+    },
+    "components": {
+      "hero": {
+        "enabled": "boolean",
+        "style": "banner | carousel | video | minimal",
+        "height": "string",
+        "overlay": "boolean",
+        "overlayOpacity": "number",
+        "showCTA": "boolean",
+        "ctaText": "string",
+        "ctaStyle": "button | link"
+      },
+      "featuredProducts": {
+        "enabled": "boolean",
+        "title": "string",
+        "count": "number",
+        "layout": "grid | carousel | list"
+      },
+      "categories": {
+        "enabled": "boolean",
+        "style": "grid | carousel | list | tabs",
+        "showImages": "boolean",
+        "showCounts": "boolean"
+      },
+      "testimonials": {
+        "enabled": "boolean",
+        "style": "carousel | grid | single",
+        "showAvatars": "boolean",
+        "showRatings": "boolean"
+      },
+      "newsletter": {
+        "enabled": "boolean",
+        "style": "inline | popup | sidebar",
+        "title": "string",
+        "description": "string"
+      }
+    },
+    "customCSS": "string",
+    "customJS": "string"
+  },
+  "defaultTemplates": [
+    {
+      "id": "modern-minimal",
+      "name": "مدرن مینیمال",
+      "description": "طراحی تمیز و مدرن با فوکوس روی محصولات",
+      "preview_image": "/templates/modern-minimal.jpg",
+      "category": "minimal",
+      "settings": {
+        "colors": {
+          "primary": "#3B82F6",
+          "secondary": "#8B5CF6",
+          "accent": "#10B981",
+          "background": "#FFFFFF",
+          "surface": "#F9FAFB",
+          "text": {
+            "primary": "#111827",
+            "secondary": "#6B7280",
+            "muted": "#9CA3AF"
+          },
+          "border": "#E5E7EB"
+        },
+        "layout": {
+          "type": "grid",
+          "columns": 3,
+          "spacing": "normal"
+        },
+        "productCard": {
+          "style": "minimal",
+          "imageAspectRatio": "square",
+          "hoverEffect": "lift"
+        }
+      }
+    },
+    {
+      "id": "elegant-dark",
+      "name": "الگانت تیره",
+      "description": "طراحی لوکس و تیره برای برندهای پریمیوم",
+      "preview_image": "/templates/elegant-dark.jpg",
+      "category": "dark",
+      "settings": {
+        "colors": {
+          "primary": "#F59E0B",
+          "secondary": "#EF4444",
+          "accent": "#8B5CF6",
+          "background": "#111827",
+          "surface": "#1F2937",
+          "text": {
+            "primary": "#F9FAFB",
+            "secondary": "#D1D5DB",
+            "muted": "#9CA3AF"
+          },
+          "border": "#374151"
+        },
+        "layout": {
+          "type": "masonry",
+          "columns": 2,
+          "spacing": "loose"
+        },
+        "productCard": {
+          "style": "overlay",
+          "imageAspectRatio": "portrait",
+          "hoverEffect": "zoom"
+        }
+      }
+    },
+    {
+      "id": "colorful-vibrant",
+      "name": "رنگارنگ پرانرژی",
+      "description": "طراحی شاد و رنگی برای محصولات جوانان",
+      "preview_image": "/templates/colorful-vibrant.jpg",
+      "category": "colorful",
+      "settings": {
+        "colors": {
+          "primary": "#EC4899",
+          "secondary": "#F59E0B",
+          "accent": "#10B981",
+          "background": "#FEF3F2",
+          "surface": "#FFFFFF",
+          "text": {
+            "primary": "#1F2937",
+            "secondary": "#4B5563",
+            "muted": "#6B7280"
+          },
+          "border": "#F3F4F6"
+        },
+        "layout": {
+          "type": "grid",
+          "columns": 4,
+          "spacing": "tight"
+        },
+        "productCard": {
+          "style": "detailed",
+          "imageAspectRatio": "landscape",
+          "hoverEffect": "fade"
+        }
+      }
+    }
+  ]
+}

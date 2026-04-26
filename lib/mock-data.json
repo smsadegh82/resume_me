@@ -1,0 +1,401 @@
+{
+  "users": [
+    {
+      "id": "user_demo",
+      "email": "demo@vitrin.ai",
+      "full_name": "کاربر نمونه",
+      "phone": "09123456789",
+      "avatar_url": null,
+      "created_at": "2024-01-01T10:00:00Z",
+      "updated_at": "2024-01-01T10:00:00Z"
+    },
+    {
+      "id": "user_2",
+      "email": "maryam@example.com",
+      "full_name": "مریم احمدی",
+      "phone": "09121111111",
+      "avatar_url": null,
+      "created_at": "2024-01-02T10:00:00Z",
+      "updated_at": "2024-01-02T10:00:00Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_demo",
+      "user_id": "user_demo",
+      "name": "فروشگاه نمونه",
+      "slug": "demo-store",
+      "description": "این یک فروشگاه نمونه است که برای تست ساخته شده",
+      "logo_url": null,
+      "banner_url": "/vibrant-store-banner.png",
+      "category": "fashion",
+      "theme": {
+        "primaryColor": "#3B82F6",
+        "secondaryColor": "#8B5CF6",
+        "fontFamily": "IRANSans"
+      },
+      "settings": {
+        "currency": "IRR",
+        "language": "fa",
+        "timezone": "Asia/Tehran",
+        "shipping": {
+          "freeShippingThreshold": 1000000,
+          "standardShippingCost": 30000,
+          "expressShippingCost": 50000
+        }
+      },
+      "contact_info": {
+        "phone": "09123456789",
+        "whatsapp": "09123456789",
+        "telegram": "@demo_store",
+        "instagram": "@demo_store",
+        "email": "info@demo-store.com",
+        "address": "تهران، خیابان ولیعصر، پلاک 123"
+      },
+      "is_active": true,
+      "created_at": "2024-01-01T10:00:00Z",
+      "updated_at": "2024-01-01T10:00:00Z"
+    },
+    {
+      "id": "store_2",
+      "user_id": "user_2",
+      "name": "مریم فشن",
+      "slug": "maryam-fashion",
+      "description": "فروشگاه پوشاک زنانه با جدیدترین مدل‌ها",
+      "logo_url": null,
+      "banner_url": null,
+      "category": "fashion",
+      "theme": {
+        "primaryColor": "#EC4899",
+        "secondaryColor": "#F59E0B"
+      },
+      "settings": {
+        "currency": "IRR",
+        "language": "fa",
+        "timezone": "Asia/Tehran"
+      },
+      "contact_info": {
+        "phone": "09121111111",
+        "whatsapp": "09121111111",
+        "instagram": "@maryam_fashion"
+      },
+      "is_active": true,
+      "created_at": "2024-01-02T10:00:00Z",
+      "updated_at": "2024-01-02T10:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "product_1",
+      "store_id": "store_demo",
+      "name": "مانتو مجلسی ساتن",
+      "description": "مانتو زیبا و شیک مناسب برای مجالس و مهمانی‌ها. از بهترین پارچه ساتن تولید شده و با دقت بالا دوخته شده است.\n\nویژگی‌های محصول:\n- پارچه: ساتن درجه یک\n- رنگ‌های موجود: مشکی، سرمه‌ای، زرشکی\n- سایزهای موجود: ۳۸ تا ۴۶\n- مناسب برای: مجالس، مهمانی، شب‌های خاص\n- نحوه شستشو: خشکشویی\n\nاین مانتو با طراحی مدرن و کیفیت عالی، انتخاب مناسبی برای کمد لباس شما خواهد بود.",
+      "price": 1200000,
+      "original_price": 1500000,
+      "images": ["/elegant-satin-coat-1.png", "/elegant-satin-coat-2.png", "/elegant-satin-coat-3.png"],
+      "category": "مانتو",
+      "tags": ["مجلسی", "ساتن", "زنانه", "شیک"],
+      "variants": {
+        "رنگ": ["مشکی", "سرمه‌ای", "زرشکی"],
+        "سایز": ["۳۸", "۴۰", "۴۲", "۴۴", "۴۶"]
+      },
+      "inventory_count": 25,
+      "is_active": true,
+      "seo_title": "مانتو مجلسی ساتن - فروشگاه نمونه",
+      "seo_description": "خرید مانتو مجلسی ساتن با کیفیت عالی و قیمت مناسب",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "product_2",
+      "store_id": "store_demo",
+      "name": "مانتو اسپرت جین",
+      "description": "مانتو راحت و کاربردی برای استفاده روزانه. از جنس جین مرغوب و با طراحی مدرن.\n\nویژگی‌های محصول:\n- پارچه: جین درجه یک\n- مناسب برای: استفاده روزانه\n- طراحی: مدرن و راحت\n- نحوه شستشو: ماشین لباسشویی",
+      "price": 850000,
+      "original_price": 1000000,
+      "images": ["/casual-denim-coat-1.png", "/casual-denim-coat.png"],
+      "category": "مانتو",
+      "tags": ["اسپرت", "جین", "روزانه", "راحت"],
+      "variants": {
+        "رنگ": ["آبی", "مشکی", "خاکستری"],
+        "سایز": ["۳۶", "۳۸", "۴۰", "۴۲"]
+      },
+      "inventory_count": 30,
+      "is_active": true,
+      "seo_title": "مانتو اسپرت جین - فروشگاه نمونه",
+      "seo_description": "خرید مانتو اسپرت جین راحت و کاربردی",
+      "created_at": "2024-01-10T10:00:00Z",
+      "updated_at": "2024-01-10T10:00:00Z"
+    },
+    {
+      "id": "product_3",
+      "store_id": "store_demo",
+      "name": "شال و روسری ابریشم",
+      "description": "شال و روسری با کیفیت از جنس ابریشم طبیعی. طرح‌های متنوع و رنگ‌های زیبا.\n\nویژگی‌های محصول:\n- جنس: ابریشم طبیعی\n- طرح‌های متنوع\n- رنگ‌های زیبا و متنوع\n- مناسب برای: همه فصول",
+      "price": 450000,
+      "original_price": null,
+      "images": ["/flowing-silk-scarf.png"],
+      "category": "روسری",
+      "tags": ["ابریشم", "شال", "روسری", "طبیعی"],
+      "variants": {
+        "طرح": ["گلدار", "هندسی", "ساده"],
+        "رنگ": ["قرمز", "آبی", "سبز", "صورتی"]
+      },
+      "inventory_count": 50,
+      "is_active": true,
+      "seo_title": "شال و روسری ابریشم - فروشگاه نمونه",
+      "seo_description": "خرید شال و روسری ابریشم طبیعی با کیفیت",
+      "created_at": "2024-01-05T10:00:00Z",
+      "updated_at": "2024-01-05T10:00:00Z"
+    },
+    {
+      "id": "product_4",
+      "store_id": "store_demo",
+      "name": "تی‌شرت مردانه کلاسیک",
+      "description": "تی‌شرت مردانه با کیفیت بالا و طراحی مدرن. مناسب برای استفاده روزمره.\n\nویژگی‌های محصول:\n- جنس: پنبه درجه یک\n- طراحی کلاسیک\n- راحت و قابل شستشو\n- مناسب برای: استفاده روزانه",
+      "price": 250000,
+      "original_price": 300000,
+      "images": ["/classic-mens-tshirt.png"],
+      "category": "پوشاک",
+      "tags": ["تی‌شرت", "مردانه", "کلاسیک", "پنبه"],
+      "variants": {
+        "رنگ": ["سفید", "مشکی", "خاکستری", "سرمه‌ای"],
+        "سایز": ["S", "M", "L", "XL", "XXL"]
+      },
+      "inventory_count": 50,
+      "is_active": true,
+      "seo_title": "تی‌شرت مردانه کلاسیک - فروشگاه نمونه",
+      "seo_description": "خرید تی‌شرت مردانه کلاسیک با کیفیت بالا",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    },
+    {
+      "id": "product_5",
+      "store_id": "store_demo",
+      "name": "کفش ورزشی زنانه",
+      "description": "کفش ورزشی راحت و سبک برای خانم‌ها. مناسب برای پیاده‌روی و ورزش.\n\nویژگی‌های محصول:\n- سبک و راحت\n- مناسب برای ورزش\n- کیفیت بالا\n- طراحی مدرن",
+      "price": 450000,
+      "original_price": 500000,
+      "images": ["/womens-sports-shoes.png"],
+      "category": "کفش",
+      "tags": ["کفش", "ورزشی", "زنانه", "راحت"],
+      "variants": {
+        "رنگ": ["سفید", "مشکی", "صورتی", "آبی"],
+        "سایز": ["37", "38", "39", "40", "41"]
+      },
+      "inventory_count": 30,
+      "is_active": true,
+      "seo_title": "کفش ورزشی زنانه - فروشگاه نمونه",
+      "seo_description": "خرید کفش ورزشی زنانه راحت و با کیفیت",
+      "created_at": "2024-01-12T10:00:00Z",
+      "updated_at": "2024-01-12T10:00:00Z"
+    },
+    {
+      "id": "product_6",
+      "store_id": "store_demo",
+      "name": "کیف دستی چرمی",
+      "description": "کیف دستی چرم طبیعی با طراحی شیک و مدرن. مناسب برای مهمانی‌ها.\n\nویژگی‌های محصول:\n- چرم طبیعی\n- طراحی شیک\n- کیفیت عالی\n- مناسب برای مهمانی‌ها",
+      "price": 800000,
+      "original_price": null,
+      "images": ["/stylish-leather-handbag.png"],
+      "category": "کیف",
+      "tags": ["کیف", "چرمی", "دستی", "شیک"],
+      "variants": {
+        "رنگ": ["مشکی", "قهوه‌ای", "کرم"],
+        "سایز": ["کوچک", "متوسط", "بزرگ"]
+      },
+      "inventory_count": 15,
+      "is_active": true,
+      "seo_title": "کیف دستی چرمی - فروشگاه نمونه",
+      "seo_description": "خرید کیف دستی چرم طبیعی با طراحی شیک",
+      "created_at": "2024-01-08T10:00:00Z",
+      "updated_at": "2024-01-08T10:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_1",
+      "store_id": "store_demo",
+      "customer_name": "زهرا محمدی",
+      "customer_email": "zahra@example.com",
+      "customer_phone": "09121234567",
+      "customer_address": "تهران، خیابان ولیعصر، پلاک 123",
+      "items": [
+        {
+          "product_id": "product_1",
+          "name": "مانتو مجلسی ساتن",
+          "price": 1200000,
+          "quantity": 1,
+          "color": "مشکی",
+          "size": "40"
+        }
+      ],
+      "subtotal": 1200000,
+      "shipping_cost": 0,
+      "discount": 0,
+      "total": 1200000,
+      "status": "completed",
+      "payment_method": "online",
+      "payment_status": "paid",
+      "shipping_method": "standard",
+      "notes": null,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T15:30:00Z"
+    },
+    {
+      "id": "order_2",
+      "store_id": "store_demo",
+      "customer_name": "فاطمه کریمی",
+      "customer_email": "fateme@example.com",
+      "customer_phone": "09129876543",
+      "customer_address": "اصفهان، خیابان چهارباغ، پلاک 456",
+      "items": [
+        {
+          "product_id": "product_2",
+          "name": "مانتو اسپرت جین",
+          "price": 850000,
+          "quantity": 2,
+          "color": "آبی",
+          "size": "38"
+        }
+      ],
+      "subtotal": 1700000,
+      "shipping_cost": 30000,
+      "discount": 0,
+      "total": 1730000,
+      "status": "pending",
+      "payment_method": "cod",
+      "payment_status": "pending",
+      "shipping_method": "standard",
+      "notes": "لطفاً قبل از ارسال تماس بگیرید",
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    },
+    {
+      "id": "order_3",
+      "store_id": "store_demo",
+      "customer_name": "سارا احمدی",
+      "customer_email": "sara@example.com",
+      "customer_phone": "09123333333",
+      "customer_address": "شیراز، خیابان زند، پلاک 789",
+      "items": [
+        {
+          "product_id": "product_3",
+          "name": "شال و روسری ابریشم",
+          "price": 450000,
+          "quantity": 3,
+          "color": "قرمز",
+          "طرح": "گلدار"
+        }
+      ],
+      "subtotal": 1350000,
+      "shipping_cost": 0,
+      "discount": 135000,
+      "total": 1215000,
+      "status": "processing",
+      "payment_method": "online",
+      "payment_status": "paid",
+      "shipping_method": "express",
+      "notes": null,
+      "created_at": "2024-01-23T10:00:00Z",
+      "updated_at": "2024-01-23T14:20:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review_1",
+      "product_id": "product_1",
+      "customer_name": "سارا احمدی",
+      "customer_email": "sara@example.com",
+      "rating": 5,
+      "comment": "کیفیت عالی و خیلی زیبا. دقیقاً مثل تصویر بود.",
+      "is_verified": true,
+      "is_approved": true,
+      "created_at": "2024-01-21T10:00:00Z"
+    },
+    {
+      "id": "review_2",
+      "product_id": "product_1",
+      "customer_name": "مریم رضایی",
+      "customer_email": "maryam@example.com",
+      "rating": 4,
+      "comment": "مانتو خوبی هست ولی سایزبندیش کمی بزرگ است.",
+      "is_verified": false,
+      "is_approved": true,
+      "created_at": "2024-01-19T10:00:00Z"
+    },
+    {
+      "id": "review_3",
+      "product_id": "product_1",
+      "customer_name": "نگار حسینی",
+      "customer_email": "negar@example.com",
+      "rating": 5,
+      "comment": "فوق‌العاده زیبا و با کیفیت. پیشنهاد می‌کنم.",
+      "is_verified": true,
+      "is_approved": true,
+      "created_at": "2024-01-18T10:00:00Z"
+    },
+    {
+      "id": "review_4",
+      "product_id": "product_2",
+      "customer_name": "لیلا محمدی",
+      "customer_email": "leila@example.com",
+      "rating": 4,
+      "comment": "راحت و کاربردی. برای استفاده روزانه عالیه.",
+      "is_verified": true,
+      "is_approved": true,
+      "created_at": "2024-01-17T10:00:00Z"
+    },
+    {
+      "id": "review_5",
+      "product_id": "product_3",
+      "customer_name": "زهرا کریمی",
+      "customer_email": "zahra.k@example.com",
+      "rating": 5,
+      "comment": "ابریشم واقعی و کیفیت فوق‌العاده. خیلی راضی هستم.",
+      "is_verified": true,
+      "is_approved": true,
+      "created_at": "2024-01-16T10:00:00Z"
+    }
+  ],
+  "analytics": [
+    {
+      "id": "analytics_1",
+      "store_id": "store_demo",
+      "event_type": "store_view",
+      "event_data": {
+        "page": "home",
+        "user_agent": "Mozilla/5.0...",
+        "referrer": "google.com"
+      },
+      "ip_address": "192.168.1.1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "created_at": "2024-01-24T10:00:00Z"
+    },
+    {
+      "id": "analytics_2",
+      "store_id": "store_demo",
+      "event_type": "product_view",
+      "event_data": {
+        "product_id": "product_1",
+        "product_name": "مانتو مجلسی ساتن"
+      },
+      "ip_address": "192.168.1.2",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+      "created_at": "2024-01-24T10:15:00Z"
+    },
+    {
+      "id": "analytics_3",
+      "store_id": "store_demo",
+      "event_type": "order_created",
+      "event_data": {
+        "order_id": "order_1",
+        "total": 1200000,
+        "payment_method": "online"
+      },
+      "ip_address": "192.168.1.3",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "created_at": "2024-01-20T10:00:00Z"
+    }
+  ]
+}
